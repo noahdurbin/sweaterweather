@@ -1,5 +1,5 @@
 class Location
-  attr_reader :state, :state, :coordinates
+  attr_reader  :city, :state, :coordinates
 
   def initialize(location_hash)
     @city = location_hash[:results].first[:locations].first[:adminArea5]
