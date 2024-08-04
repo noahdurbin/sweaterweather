@@ -3,16 +3,6 @@ require 'spec_helper'
 require 'simplecov'
 SimpleCov.start
 
-RSpec.configure do |config|
-  config.include FactoryBot::Syntax::Methods
-end
-
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-    with.library :rails
-  end
-end
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -81,5 +71,19 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.filter_sensitive_data(:'weather_key') {
+    Rails.application.credentials.weather[:access_key]
+  }
+  config.filter_sensitive_data(:'map_key') {
+    Rails.application.credentials.maps[:access_key]
+  }
   config.configure_rspec_metadata!
+  config.allow_http_connections_when_no_cassette = true
+end
+
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
 end
