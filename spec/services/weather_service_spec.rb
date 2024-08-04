@@ -51,9 +51,10 @@ RSpec.describe 'weather service' do
 
       expect(response[:forecast][:forecastday].first[:hour].first).to have_key(:time)
       expect(response[:forecast][:forecastday].first[:hour].first).to have_key(:temp_f)
-      expect(response[:forecast][:forecastday].first[:hour].first).to_not have_key(:humidity)
-      expect(response[:forecast][:forecastday].first[:hour].first).to_not have_key(:cloud)
-      expect(response[:forecast][:forecastday].first[:hour].first).to_not have_key(:cloud)
+      expect(response[:forecast][:forecastday].first[:hour].first).to have_key(:condition)
+      expect(response[:forecast][:forecastday].first[:hour].first[:condition]).to have_key(:text)
+      expect(response[:forecast][:forecastday].first[:hour].first[:condition]).to have_key(:icon)
+      expect(response[:forecast][:forecastday].first[:hour].first.count).to eq 3
     end
   end
 
@@ -64,12 +65,7 @@ RSpec.describe 'weather service' do
 
       expect(response[:forecast][:forecastday].first[:astro]).to have_key(:sunrise)
       expect(response[:forecast][:forecastday].first[:astro]).to have_key(:sunset)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:moonrise)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:moonset)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:moon_illumination)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:is_sun_up)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:is_moon_up)
-      expect(response[:forecast][:forecastday].first[:astro]).to_not have_key(:moon_phase)
+      expect(response[:forecast][:forecastday].first[:astro].count).to eq 2
     end
   end
 end
