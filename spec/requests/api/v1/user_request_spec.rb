@@ -49,4 +49,65 @@ RSpec.describe "User api endpoints" do
       expect(json_response['errors'].first['status']).to eq("422")
     end
   end
+
+  describe 'user login' do
+    it 'allows a user to login', :vcr do
+      user_params = {
+        email: 'user1@test.com',
+        password: 'password',
+        password_confirmation: 'password'
+      }
+
+      post api_v1_users_path, params: user_params
+      expect(response).to have_http_status(:created)
+
+      login_params = {
+        email: 'user1@test.com',
+        password: 'password'
+      }
+
+      post '/api/v1/sessions', params: login_params
+      expect(response).to have_http_status(200)
+      user = JSON.parse(response.body, symbolize_names: true)
+
+      expect(user).to have_key :data
+      expect(user[:data]).to have_key :type
+      expect(user[:data][:type]).to eq "user"
+      expect(user[:data]).to have_key :id
+      expect(user[:data][:attributes][:email]).to eq "user1@test.com"
+      expect(user[:data][:attributes]).to have_key :api_key
+      expect(user[:data].count).to eq 3
+    end
+
+    it 'returns an error if password is incorrect' do
+      user_params = {
+        email: 'user1@test.com',
+        password: 'password',
+        password_confirmation: 'password'
+      }
+
+      post api_v1_users_path, params: user_params
+      expect(response).to have_http_status(:created)
+
+      login_params = {
+        email: 'user1@test.com',
+        password: 'paword'
+      }
+      post '/api/v1/sessions', params: login_params
+      error = JSON.parse(response.body, symbolize_names: true)
+      expect(error[:error][:message]).to eq "Invalid Password"
+      expect(error[:error][:status]).to eq 401
+    end
+
+    it 'returns an error if the user does not exist/email is incorrect' do
+      login_params = {
+        email: 'user1@test.com',
+        password: 'paword'
+      }
+      post '/api/v1/sessions', params: login_params
+      error = JSON.parse(response.body, symbolize_names: true)
+      expect(error[:error][:message]).to eq "User Not Found"
+      expect(error[:error][:status]).to eq 404
+    end
+  end
 end
