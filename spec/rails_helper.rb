@@ -78,6 +78,7 @@ VCR.configure do |config|
     Rails.application.credentials.maps[:access_key]
   }
   config.configure_rspec_metadata!
+  config.allow_http_connections_when_no_cassette = true
 end
 
 Shoulda::Matchers.configure do |config|
