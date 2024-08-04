@@ -71,6 +71,12 @@ end
 VCR.configure do |config|
   config.cassette_library_dir = "spec/fixtures/vcr_cassettes"
   config.hook_into :webmock
+  config.filter_sensitive_data(:'weather_key') {
+    Rails.application.credentials.weather[:access_key]
+  }
+  config.filter_sensitive_data(:'map_key') {
+    Rails.application.credentials.maps[:access_key]
+  }
   config.configure_rspec_metadata!
 end
 
