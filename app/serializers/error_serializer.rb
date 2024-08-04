@@ -1,16 +1,15 @@
 class ErrorSerializer
-  def initialize(error_object)
-    @error_object = error_object
+  def initialize(error)
+    @error = error
   end
 
-  def serialize_json
-    binding.pry
+  def serialize
     {
       errors: [
-        {
-          status: @error_object.status_code,
-          title: @error_object.message
-        }
+          {
+            status: @error.status.to_s,
+            message: @error.message,
+          }
       ]
     }
   end

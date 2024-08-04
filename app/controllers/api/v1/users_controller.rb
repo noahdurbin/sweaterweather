@@ -4,7 +4,7 @@ class Api::V1::UsersController < ApplicationController
     if @user.save
       render json: UserSerializer.new(@user), status: :created
     else
-      render ErrorSerializer.new(@user.errors).serialize_json, status: :unprocessable_entity
+      raise ActiveRecord::RecordInvalid.new(@user)
     end
   end
 
