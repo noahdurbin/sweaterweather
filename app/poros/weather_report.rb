@@ -5,7 +5,7 @@ class WeatherReport
 
   def initialize(weather_data)
     @last_updated = weather_data[:current][:last_updated]
-    @temperature = weather_data[:current][:temp_f]
+    @temperature = "#{weather_data[:current][:temp_f]} F"
     @feels_like = weather_data[:current][:feelslike_f]
     @humidity = weather_data[:current][:humidity]
     @uvi = weather_data[:current][:uv]
