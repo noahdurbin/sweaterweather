@@ -2,7 +2,7 @@ class Book
   attr_reader :isbn, :title, :publisher
 
   def initialize(book_hash)
-    @isbn
+    @isbn = book_hash[:isbn]
     @title
     @publisher
   end
