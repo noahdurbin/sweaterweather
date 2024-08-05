@@ -16,7 +16,7 @@ RSpec.describe 'Road Trip' do
       expect(response).to be_successful
     end
 
-    it 'can take two cities and calculate, driving time, and weather upon arrival' do
+    xit 'can take two cities and calculate, driving time, and weather upon arrival' do
     end
   end
 end
