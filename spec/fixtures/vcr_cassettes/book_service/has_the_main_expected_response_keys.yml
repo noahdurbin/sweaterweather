@@ -1,0 +1,1063 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=10&title=New%20York,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 05 Aug 2024 17:08:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 0.247 TT 0 0.258"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 360,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "author_key": [
+                        "OL13968354A"
+                    ],
+                    "author_name": [
+                        "New York Co-operative Society"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL52916214M"
+                    ],
+                    "first_publish_year": 1980,
+                    "has_fulltext": false,
+                    "key": "/works/OL38863580W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1722195543,
+                    "oclc": [
+                        "152426055"
+                    ],
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1980"
+                    ],
+                    "publish_place": [
+                        "New York?]"
+                    ],
+                    "publish_year": [
+                        1980
+                    ],
+                    "publisher": [
+                        "publisher not identified"
+                    ],
+                    "seed": [
+                        "/books/OL52916214M",
+                        "/works/OL38863580W",
+                        "/authors/OL13968354A",
+                        "/subjects/cooperative_societies",
+                        "/subjects/new_york_co-operative_society",
+                        "/subjects/place:new_york_(state)",
+                        "/subjects/place:new_york"
+                    ],
+                    "title": "The New York Co-operative Society",
+                    "title_sort": "The New York Co-operative Society",
+                    "title_suggest": "The New York Co-operative Society",
+                    "type": "work",
+                    "subject": [
+                        "Cooperative societies",
+                        "New York Co-operative Society"
+                    ],
+                    "place": [
+                        "New York (State)",
+                        "New York"
+                    ],
+                    "readinglog_count": 0,
+                    "want_to_read_count": 0,
+                    "currently_reading_count": 0,
+                    "already_read_count": 0,
+                    "publisher_facet": [
+                        "publisher not identified"
+                    ],
+                    "place_key": [
+                        "new_york",
+                        "new_york_(state)"
+                    ],
+                    "subject_facet": [
+                        "Cooperative societies",
+                        "New York Co-operative Society"
+                    ],
+                    "_version_": 1805852918594666496,
+                    "place_facet": [
+                        "New York",
+                        "New York (State)"
+                    ],
+                    "author_facet": [
+                        "OL13968354A New York Co-operative Society"
+                    ],
+                    "subject_key": [
+                        "cooperative_societies",
+                        "new_york_co-operative_society"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL228219A"
+                    ],
+                    "author_name": [
+                        "Sylvia Shapiro"
+                    ],
+                    "cover_edition_key": "OL9590058M",
+                    "cover_i": 180645,
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL9590058M",
+                        "OL34864463M"
+                    ],
+                    "first_publish_year": 2005,
+                    "first_sentence": [
+                        "It's amazing what unexpected consequences an unintended book can have. "
+                    ],
+                    "format": [
+                        "Paperback"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "9780312340759",
+                        "1466861517",
+                        "9781466861510",
+                        "0312340753"
+                    ],
+                    "key": "/works/OL1906384W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1699405592,
+                    "lcc": [
+                        "HD-7287.72000000.U6 S49 2005",
+                        "HD-7287.72000000.U6S49 2005"
+                    ],
+                    "lccn": [
+                        "2004066058"
+                    ],
+                    "number_of_pages_median": 368,
+                    "oclc": [
+                        "57352841"
+                    ],
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "2013",
+                        "April 14, 2005"
+                    ],
+                    "publish_year": [
+                        2013,
+                        2005
+                    ],
+                    "publisher": [
+                        "St. Martin's Press",
+                        "St. Martin's Griffin"
+                    ],
+                    "seed": [
+                        "/books/OL9590058M",
+                        "/books/OL34864463M",
+                        "/works/OL1906384W",
+                        "/authors/OL228219A",
+                        "/subjects/apartment_houses_cooperative",
+                        "/subjects/condominiums",
+                        "/subjects/cooperative_apartment_houses"
+                    ],
+                    "title": "The New York Co-op Bible: Everything You Need to Know About Co-ops and Condos",
+                    "title_suggest": "The New York Co-op Bible: Everything You Need to Know About Co-ops and Condos",
+                    "title_sort": "The New York Co-op Bible: Everything You Need to Know About Co-ops and Condos",
+                    "type": "work",
+                    "id_goodreads": [
+                        "1053998"
+                    ],
+                    "id_librarything": [
+                        "2000897"
+                    ],
+                    "subject": [
+                        "Apartment houses, cooperative",
+                        "Condominiums",
+                        "Cooperative Apartment houses"
+                    ],
+                    "readinglog_count": 1,
+                    "want_to_read_count": 1,
+                    "currently_reading_count": 0,
+                    "already_read_count": 0,
+                    "publisher_facet": [
+                        "St. Martin's Griffin",
+                        "St. Martin's Press"
+                    ],
+                    "subject_facet": [
+                        "Apartment houses, cooperative",
+                        "Condominiums",
+                        "Cooperative Apartment houses"
+                    ],
+                    "_version_": 1795869372689940481,
+                    "lcc_sort": "HD-7287.72000000.U6 S49 2005",
+                    "author_facet": [
+                        "OL228219A Sylvia Shapiro"
+                    ],
+                    "subject_key": [
+                        "apartment_houses_cooperative",
+                        "condominiums",
+                        "cooperative_apartment_houses"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL7218494A"
+                    ],
+                    "author_name": [
+                        "Abercrombie & Fitch"
+                    ],
+                    "cover_edition_key": "OL33053953M",
+                    "cover_i": 11755768,
+                    "ebook_access": "public",
+                    "ebook_count_i": 1,
+                    "edition_count": 3,
+                    "edition_key": [
+                        "OL33053953M",
+                        "OL46239528M",
+                        "OL46262252M"
+                    ],
+                    "first_publish_year": 1916,
+                    "has_fulltext": true,
+                    "ia": [
+                        "abercrombiefitch00aber_0"
+                    ],
+                    "ia_collection": [
+                        "ColumbiaUniversityLibraries",
+                        "americana",
+                        "durstoldyorklibrary"
+                    ],
+                    "ia_collection_s": "ColumbiaUniversityLibraries;americana;durstoldyorklibrary",
+                    "isbn": [
+                        "9781014960283",
+                        "1014960282",
+                        "9781013773617",
+                        "1013773616"
+                    ],
+                    "key": "/works/OL24867385W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1673978487,
+                    "lending_edition_s": "OL33053953M",
+                    "lending_identifier_s": "abercrombiefitch00aber_0",
+                    "number_of_pages_median": 29,
+                    "public_scan_b": true,
+                    "publish_date": [
+                        "2021",
+                        "1916"
+                    ],
+                    "publish_place": [
+                        "New York"
+                    ],
+                    "publish_year": [
+                        1916,
+                        2021
+                    ],
+                    "publisher": [
+                        "Creative Media Partners, LLC",
+                        "Abercrombie & Fitch Co."
+                    ],
+                    "seed": [
+                        "/books/OL33053953M",
+                        "/books/OL46239528M",
+                        "/books/OL46262252M",
+                        "/works/OL24867385W",
+                        "/authors/OL7218494A",
+                        "/subjects/sporting_goods",
+                        "/subjects/catalogs",
+                        "/subjects/camping",
+                        "/subjects/equipment_and_supplies",
+                        "/subjects/sport_clothes",
+                        "/subjects/clothing_and_dress",
+                        "/subjects/abercrombie_&_fitch"
+                    ],
+                    "title": "[Abercrombie & Fitch Co., New York",
+                    "title_suggest": "[Abercrombie & Fitch Co., New York",
+                    "title_sort": "[Abercrombie & Fitch Co., New York",
+                    "type": "work",
+                    "subject": [
+                        "Sporting goods",
+                        "Catalogs",
+                        "Camping",
+                        "Equipment and supplies",
+                        "Sport clothes",
+                        "Clothing and dress",
+                        "Abercrombie & Fitch"
+                    ],
+                    "publisher_facet": [
+                        "Abercrombie & Fitch Co.",
+                        "Creative Media Partners, LLC"
+                    ],
+                    "subject_facet": [
+                        "Abercrombie & Fitch",
+                        "Camping",
+                        "Catalogs",
+                        "Clothing and dress",
+                        "Equipment and supplies",
+                        "Sport clothes",
+                        "Sporting goods"
+                    ],
+                    "_version_": 1795886790445367296,
+                    "author_facet": [
+                        "OL7218494A Abercrombie & Fitch"
+                    ],
+                    "subject_key": [
+                        "abercrombie__fitch",
+                        "camping",
+                        "catalogs",
+                        "clothing_and_dress",
+                        "equipment_and_supplies",
+                        "sport_clothes",
+                        "sporting_goods"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL9166238A",
+                        "OL9213646A"
+                    ],
+                    "author_name": [
+                        "Josephine C Frost",
+                        "Society of Friends. Peru Monthly Meeting"
+                    ],
+                    "cover_edition_key": "OL32414390M",
+                    "cover_i": 11075960,
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 4,
+                    "edition_key": [
+                        "OL32732457M",
+                        "OL32414390M",
+                        "OL32714689M",
+                        "OL32474110M"
+                    ],
+                    "first_publish_year": 2018,
+                    "format": [
+                        "paperback",
+                        "hardcover"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "9780344436703",
+                        "0342466429",
+                        "9780342466436",
+                        "9780344436697",
+                        "0342466437",
+                        "0344436705",
+                        "0344436691",
+                        "9780342466429"
+                    ],
+                    "key": "/works/OL24469152W",
+                    "last_modified_i": 1670072034,
+                    "number_of_pages_median": 88,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "Oct 29, 2018",
+                        "Oct 11, 2018"
+                    ],
+                    "publish_year": [
+                        2018
+                    ],
+                    "publisher": [
+                        "Franklin Classics Trade Press",
+                        "Franklin Classics"
+                    ],
+                    "seed": [
+                        "/books/OL32732457M",
+                        "/books/OL32414390M",
+                        "/books/OL32714689M",
+                        "/books/OL32474110M",
+                        "/works/OL24469152W",
+                        "/authors/OL9166238A",
+                        "/authors/OL9213646A"
+                    ],
+                    "title": "Quaker Records, Peru, Clinton Co., New York",
+                    "title_suggest": "Quaker Records, Peru, Clinton Co., New York",
+                    "title_sort": "Quaker Records, Peru, Clinton Co., New York",
+                    "type": "work",
+                    "publisher_facet": [
+                        "Franklin Classics",
+                        "Franklin Classics Trade Press"
+                    ],
+                    "_version_": 1795885942747168768,
+                    "author_facet": [
+                        "OL9166238A Josephine C Frost",
+                        "OL9213646A Society of Friends. Peru Monthly Meeting"
+                    ]
+                },
+                {
+                    "author_alternative_name": [
+                        "United States Interstate Commerce Commission",
+                        "United States Interstate Commerce Commission.",
+                        "United States. Interstate Commerce Commission"
+                    ],
+                    "author_key": [
+                        "OL114284A"
+                    ],
+                    "author_name": [
+                        "United States. Interstate Commerce Commission."
+                    ],
+                    "contributor": [
+                        "Harlan, James Shanklin, 1861-1927."
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 3,
+                    "edition_key": [
+                        "OL16715351M",
+                        "OL6572499M",
+                        "OL6572439M"
+                    ],
+                    "first_publish_year": 1914,
+                    "has_fulltext": false,
+                    "key": "/works/OL1111745W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1720847022,
+                    "lcc": [
+                        "HE-2791.00000000.N623 1914",
+                        "HE-2791.00000000.N546 1914b"
+                    ],
+                    "lccn": [
+                        "14030602",
+                        "14030853"
+                    ],
+                    "number_of_pages_median": 101,
+                    "oclc": [
+                        "11023976",
+                        "34899345",
+                        "16528713"
+                    ],
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1914"
+                    ],
+                    "publish_place": [
+                        "Washington"
+                    ],
+                    "publish_year": [
+                        1914
+                    ],
+                    "publisher": [
+                        "Govt. print. off.",
+                        "Govt. Print. Off."
+                    ],
+                    "seed": [
+                        "/books/OL16715351M",
+                        "/books/OL6572499M",
+                        "/books/OL6572439M",
+                        "/works/OL1111745W",
+                        "/authors/OL114284A",
+                        "/subjects/new_haven_and_hartford_railroad_company_new_york",
+                        "/subjects/new_york_new_haven_and_hartford_railroad_company"
+                    ],
+                    "title": "New York, New Haven & Hartford Railroad Co",
+                    "title_suggest": "New York, New Haven & Hartford Railroad Co",
+                    "title_sort": "New York, New Haven & Hartford Railroad Co",
+                    "type": "work",
+                    "subject": [
+                        "New Haven and Hartford Railroad Company New York",
+                        "New York, New Haven, and Hartford Railroad Company"
+                    ],
+                    "readinglog_count": 0,
+                    "want_to_read_count": 0,
+                    "currently_reading_count": 0,
+                    "already_read_count": 0,
+                    "publisher_facet": [
+                        "Govt. Print. Off.",
+                        "Govt. print. off."
+                    ],
+                    "subject_facet": [
+                        "New Haven and Hartford Railroad Company New York",
+                        "New York, New Haven, and Hartford Railroad Company"
+                    ],
+                    "_version_": 1804438893077987328,
+                    "lcc_sort": "HE-2791.00000000.N546 1914b",
+                    "author_facet": [
+                        "OL114284A United States. Interstate Commerce Commission."
+                    ],
+                    "subject_key": [
+                        "new_haven_and_hartford_railroad_company_new_york",
+                        "new_york_new_haven_and_hartford_railroad_company"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL1137605A"
+                    ],
+                    "author_name": [
+                        "Nathaniel Bartlett Sylvester"
+                    ],
+                    "cover_edition_key": "OL24575526M",
+                    "cover_i": 7194904,
+                    "ddc": [
+                        "974.741"
+                    ],
+                    "ebook_access": "public",
+                    "ebook_count_i": 1,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL52306536M",
+                        "OL24575526M"
+                    ],
+                    "first_publish_year": 1880,
+                    "has_fulltext": true,
+                    "ia": [
+                        "historyofrenssel00sylv"
+                    ],
+                    "ia_collection": [
+                        "americana",
+                        "newyorkpubliclibrary"
+                    ],
+                    "ia_collection_s": "americana;newyorkpubliclibrary",
+                    "key": "/works/OL15627470W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1721817694,
+                    "lcc": [
+                        "F--0127.00000000.R3 S9"
+                    ],
+                    "lccn": [
+                        "02001296",
+                        "nuc87741901"
+                    ],
+                    "lending_edition_s": "OL24575526M",
+                    "lending_identifier_s": "historyofrenssel00sylv",
+                    "number_of_pages_median": 564,
+                    "oclc": [
+                        "23449616",
+                        "3496287"
+                    ],
+                    "public_scan_b": true,
+                    "publish_date": [
+                        "1900",
+                        "1880"
+                    ],
+                    "publish_place": [
+                        "Philadelphia"
+                    ],
+                    "publish_year": [
+                        1880,
+                        1900
+                    ],
+                    "publisher": [
+                        "Everts & Peck"
+                    ],
+                    "seed": [
+                        "/books/OL52306536M",
+                        "/books/OL24575526M",
+                        "/works/OL15627470W",
+                        "/authors/OL1137605A",
+                        "/subjects/printing",
+                        "/subjects/bibliography",
+                        "/subjects/biography",
+                        "/subjects/history",
+                        "/subjects/place:troy",
+                        "/subjects/place:new_york_(state)",
+                        "/subjects/place:rensselaer_county_(n.y.)"
+                    ],
+                    "title": "History of Rensselaer Co., New York",
+                    "title_sort": "History of Rensselaer Co., New York",
+                    "title_suggest": "History of Rensselaer Co., New York",
+                    "type": "work",
+                    "subject": [
+                        "Printing",
+                        "Bibliography",
+                        "Biography",
+                        "History"
+                    ],
+                    "place": [
+                        "Troy",
+                        "New York (State)",
+                        "Rensselaer County (N.Y.)"
+                    ],
+                    "readinglog_count": 1,
+                    "want_to_read_count": 0,
+                    "currently_reading_count": 0,
+                    "already_read_count": 1,
+                    "publisher_facet": [
+                        "Everts & Peck"
+                    ],
+                    "place_key": [
+                        "new_york_(state)",
+                        "rensselaer_county_(n.y.)",
+                        "troy"
+                    ],
+                    "subject_facet": [
+                        "Bibliography",
+                        "Biography",
+                        "History",
+                        "Printing"
+                    ],
+                    "_version_": 1805456716421136385,
+                    "place_facet": [
+                        "New York (State)",
+                        "Rensselaer County (N.Y.)",
+                        "Troy"
+                    ],
+                    "lcc_sort": "F--0127.00000000.R3 S9",
+                    "author_facet": [
+                        "OL1137605A Nathaniel Bartlett Sylvester"
+                    ],
+                    "subject_key": [
+                        "bibliography",
+                        "biography",
+                        "history",
+                        "printing"
+                    ],
+                    "ddc_sort": "974.741"
+                },
+                {
+                    "author_key": [
+                        "OL4825013A",
+                        "OL81968A"
+                    ],
+                    "author_name": [
+                        "New York and Erie Railroad Company",
+                        "New York (State)"
+                    ],
+                    "contributor": [
+                        "New York (State)"
+                    ],
+                    "cover_edition_key": "OL32299527M",
+                    "cover_i": 10924936,
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 6,
+                    "edition_key": [
+                        "OL52669637M",
+                        "OL51379750M",
+                        "OL50750172M",
+                        "OL42843762M",
+                        "OL32612772M",
+                        "OL32299527M"
+                    ],
+                    "first_publish_year": 1849,
+                    "format": [
+                        "hardcover",
+                        "paperback"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "0353392413",
+                        "9780353392403",
+                        "1019547588",
+                        "9781021293978",
+                        "9780343343354",
+                        "1021293970",
+                        "9781019547588",
+                        "0343343355",
+                        "0353392405",
+                        "9780353392410"
+                    ],
+                    "key": "/works/OL24389384W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1721285087,
+                    "lccn": [
+                        "a18000014"
+                    ],
+                    "number_of_pages_median": 132,
+                    "oclc": [
+                        "20950640"
+                    ],
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "Nov 11, 2018",
+                        "2018",
+                        "1849",
+                        "2023"
+                    ],
+                    "publish_place": [
+                        "New York"
+                    ],
+                    "publish_year": [
+                        1849,
+                        2018,
+                        2023
+                    ],
+                    "publisher": [
+                        "Snowden, Printer",
+                        "Creative Media Partners, LLC",
+                        "Franklin Classics Trade Press"
+                    ],
+                    "seed": [
+                        "/books/OL52669637M",
+                        "/books/OL51379750M",
+                        "/books/OL50750172M",
+                        "/books/OL42843762M",
+                        "/books/OL32612772M",
+                        "/books/OL32299527M",
+                        "/works/OL24389384W",
+                        "/authors/OL4825013A",
+                        "/authors/OL81968A"
+                    ],
+                    "title": "Charter and Laws Relating to the New York and Erie Railroad Co., General Railroad Law, &c",
+                    "title_suggest": "Charter and Laws Relating to the New York and Erie Railroad Co., General Railroad Law, &c",
+                    "title_sort": "Charter and Laws Relating to the New York and Erie Railroad Co., General Railroad Law, &c",
+                    "type": "work",
+                    "readinglog_count": 0,
+                    "want_to_read_count": 0,
+                    "currently_reading_count": 0,
+                    "already_read_count": 0,
+                    "publisher_facet": [
+                        "Creative Media Partners, LLC",
+                        "Franklin Classics Trade Press",
+                        "Snowden, Printer"
+                    ],
+                    "_version_": 1804898234262355968,
+                    "author_facet": [
+                        "OL4825013A New York and Erie Railroad Company",
+                        "OL81968A New York (State)"
+                    ]
+                },
+                {
+                    "author_key": [
+                        "OL7218494A"
+                    ],
+                    "author_name": [
+                        "Abercrombie & Fitch"
+                    ],
+                    "cover_edition_key": "OL25585351M",
+                    "cover_i": 9757778,
+                    "ebook_access": "public",
+                    "ebook_count_i": 1,
+                    "edition_count": 2,
+                    "edition_key": [
+                        "OL44663766M",
+                        "OL25585351M"
+                    ],
+                    "first_publish_year": 1916,
+                    "format": [
+                        "[electronic resource] :"
+                    ],
+                    "has_fulltext": true,
+                    "ia": [
+                        "abercrombiefitch00aber"
+                    ],
+                    "ia_collection": [
+                        "ColumbiaUniversityLibraries",
+                        "americana",
+                        "durstoldyorklibrary"
+                    ],
+                    "ia_collection_s": "ColumbiaUniversityLibraries;americana;durstoldyorklibrary",
+                    "key": "/works/OL17013095W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1671628946,
+                    "lending_edition_s": "OL25585351M",
+                    "lending_identifier_s": "abercrombiefitch00aber",
+                    "number_of_pages_median": 96,
+                    "oclc": [
+                        "904392734",
+                        "904803914",
+                        "904810882",
+                        "904392735"
+                    ],
+                    "public_scan_b": true,
+                    "publish_date": [
+                        "1916"
+                    ],
+                    "publish_place": [
+                        "New York"
+                    ],
+                    "publish_year": [
+                        1916
+                    ],
+                    "publisher": [
+                        "Abercrombie & Fitch Co."
+                    ],
+                    "seed": [
+                        "/books/OL44663766M",
+                        "/books/OL25585351M",
+                        "/works/OL17013095W",
+                        "/authors/OL7218494A",
+                        "/subjects/equipment_and_supplies",
+                        "/subjects/catalogs",
+                        "/subjects/sporting_goods",
+                        "/subjects/camping",
+                        "/subjects/sport_clothes",
+                        "/subjects/clothing_and_dress",
+                        "/subjects/abercrombie_&_fitch"
+                    ],
+                    "title": "Abercrombie & Fitch Co., New York",
+                    "title_suggest": "Abercrombie & Fitch Co., New York",
+                    "title_sort": "Abercrombie & Fitch Co., New York",
+                    "type": "work",
+                    "subject": [
+                        "Equipment and supplies",
+                        "Catalogs",
+                        "Sporting goods",
+                        "Camping",
+                        "Sport clothes",
+                        "Clothing and dress",
+                        "Abercrombie & Fitch"
+                    ],
+                    "publisher_facet": [
+                        "Abercrombie & Fitch Co."
+                    ],
+                    "subject_facet": [
+                        "Abercrombie & Fitch",
+                        "Camping",
+                        "Catalogs",
+                        "Clothing and dress",
+                        "Equipment and supplies",
+                        "Sport clothes",
+                        "Sporting goods"
+                    ],
+                    "_version_": 1795861822406918144,
+                    "author_facet": [
+                        "OL7218494A Abercrombie & Fitch"
+                    ],
+                    "subject_key": [
+                        "abercrombie__fitch",
+                        "camping",
+                        "catalogs",
+                        "clothing_and_dress",
+                        "equipment_and_supplies",
+                        "sport_clothes",
+                        "sporting_goods"
+                    ]
+                },
+                {
+                    "author_alternative_name": [
+                        "United States. Congress House.",
+                        "United States. Congress House",
+                        "United States Congress House",
+                        "United States Congress. House",
+                        "United States. Congress. House."
+                    ],
+                    "author_key": [
+                        "OL4529419A"
+                    ],
+                    "author_name": [
+                        "United States. Congress. House"
+                    ],
+                    "contributor": [
+                        "United States. Congress. House. Committee on Claims"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL16158782M"
+                    ],
+                    "first_publish_year": 1930,
+                    "format": [
+                        "Electronic resource"
+                    ],
+                    "has_fulltext": false,
+                    "key": "/works/OL10901089W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1343596666,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1930"
+                    ],
+                    "publish_place": [
+                        "Washington"
+                    ],
+                    "publish_year": [
+                        1930
+                    ],
+                    "publisher": [
+                        "Sine nomine"
+                    ],
+                    "seed": [
+                        "/books/OL16158782M",
+                        "/works/OL10901089W",
+                        "/authors/OL4529419A",
+                        "/subjects/bills_private",
+                        "/subjects/claims",
+                        "/subjects/private_bills",
+                        "/subjects/united_states",
+                        "/subjects/united_states._congress",
+                        "/subjects/place:united_states"
+                    ],
+                    "title": "New York Marine Co",
+                    "title_suggest": "New York Marine Co",
+                    "title_sort": "New York Marine Co",
+                    "type": "work",
+                    "subject": [
+                        "Bills, Private",
+                        "Claims",
+                        "Private Bills",
+                        "United States",
+                        "United States. Congress"
+                    ],
+                    "place": [
+                        "United States"
+                    ],
+                    "publisher_facet": [
+                        "Sine nomine"
+                    ],
+                    "place_key": [
+                        "united_states"
+                    ],
+                    "subject_facet": [
+                        "Bills, Private",
+                        "Claims",
+                        "Private Bills",
+                        "United States",
+                        "United States. Congress"
+                    ],
+                    "_version_": 1795846911973916674,
+                    "place_facet": [
+                        "United States"
+                    ],
+                    "author_facet": [
+                        "OL4529419A United States. Congress. House"
+                    ],
+                    "subject_key": [
+                        "bills_private",
+                        "claims",
+                        "private_bills",
+                        "united_states",
+                        "united_states._congress"
+                    ]
+                },
+                {
+                    "author_alternative_name": [
+                        "United States. Congress House. Committee on Claims.",
+                        "United States. Congress. House. Committee on Claims."
+                    ],
+                    "author_key": [
+                        "OL4766486A"
+                    ],
+                    "author_name": [
+                        "United States. Congress. House. Committee on Claims"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL16153338M"
+                    ],
+                    "first_publish_year": 1928,
+                    "format": [
+                        "Electronic resource"
+                    ],
+                    "has_fulltext": false,
+                    "key": "/works/OL11343272W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1343596480,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1928"
+                    ],
+                    "publish_place": [
+                        "Washington"
+                    ],
+                    "publish_year": [
+                        1928
+                    ],
+                    "publisher": [
+                        "Sine nomine"
+                    ],
+                    "seed": [
+                        "/books/OL16153338M",
+                        "/works/OL11343272W",
+                        "/authors/OL4766486A",
+                        "/subjects/bills_private",
+                        "/subjects/claims",
+                        "/subjects/private_bills",
+                        "/subjects/united_states",
+                        "/subjects/united_states._congress",
+                        "/subjects/place:united_states"
+                    ],
+                    "title": "New York Marine Co",
+                    "title_suggest": "New York Marine Co",
+                    "title_sort": "New York Marine Co",
+                    "type": "work",
+                    "subject": [
+                        "Bills, Private",
+                        "Claims",
+                        "Private Bills",
+                        "United States",
+                        "United States. Congress"
+                    ],
+                    "place": [
+                        "United States"
+                    ],
+                    "publisher_facet": [
+                        "Sine nomine"
+                    ],
+                    "place_key": [
+                        "united_states"
+                    ],
+                    "subject_facet": [
+                        "Bills, Private",
+                        "Claims",
+                        "Private Bills",
+                        "United States",
+                        "United States. Congress"
+                    ],
+                    "_version_": 1795848176138190848,
+                    "place_facet": [
+                        "United States"
+                    ],
+                    "author_facet": [
+                        "OL4766486A United States. Congress. House. Committee on Claims"
+                    ],
+                    "subject_key": [
+                        "bills_private",
+                        "claims",
+                        "private_bills",
+                        "united_states",
+                        "united_states._congress"
+                    ]
+                }
+            ],
+            "num_found": 360,
+            "q": "",
+            "offset": null
+        }
+  recorded_at: Mon, 05 Aug 2024 17:08:21 GMT
+recorded_with: VCR 6.2.0
