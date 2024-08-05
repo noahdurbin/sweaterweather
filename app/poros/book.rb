@@ -3,9 +3,7 @@ class Book
 
   def initialize(book_hash)
     @isbn = book_hash[:isbn]
-    @title
-    @publisher
+    @title = [:title]
+    @publisher = book_hash[:publisher]
   end
-
-
 end
