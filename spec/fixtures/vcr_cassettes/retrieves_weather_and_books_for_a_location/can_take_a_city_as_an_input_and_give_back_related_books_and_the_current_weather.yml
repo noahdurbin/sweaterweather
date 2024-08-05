@@ -1,0 +1,590 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=map_key&location=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Aug 2024 16:54:29 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '797'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - 618d0860-534b-11ef-883d-677eee8ae47a
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"31d-UWl4xqMA+XoeHsC3eT5D4hq+shg"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Mon, 05 Aug 2024 16:54:30 GMT
+- request:
+    method: get
+    uri: https://api.weatherapi.com/v1/forecast.json?days=5&key=weather_key&q=39.74001,-104.99202
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 05 Aug 2024 16:54:30 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1067
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Weatherapi-Qpm-Left:
+      - '4999982'
+      X-Varnish:
+      - '103379320'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '08/05/2024 16:52:54'
+      Cdn-Edgestorageid:
+      - '1068'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - ca828c8aa91aabbd19a9d12a319a6ed9
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Denver","region":"Colorado","country":"United
+        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1722876683,"localtime":"2024-08-05
+        10:51"},"current":{"last_updated":"2024-08-05 10:45","temp_f":86.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"},"humidity":26,"feelslike_f":83.8,"vis_miles":6.0,"uv":8.0},"forecast":{"forecastday":[{"date":"2024-08-05","day":{"maxtemp_f":93.8,"mintemp_f":70.3,"avgtemp_f":78.1,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:03
+        AM","sunset":"08:08 PM"},"hour":[{"time":"2024-08-05 00:00","temp_f":76.6,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-05
+        01:00","temp_f":76.2,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-05
+        02:00","temp_f":75.5,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-05
+        03:00","temp_f":75.2,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-05
+        04:00","temp_f":74.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        05:00","temp_f":74.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        06:00","temp_f":74.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        07:00","temp_f":76.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        08:00","temp_f":79.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        09:00","temp_f":83.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        10:00","temp_f":86.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        11:00","temp_f":89.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        12:00","temp_f":91.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        13:00","temp_f":92.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        14:00","temp_f":84.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        15:00","temp_f":81.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        16:00","temp_f":78.4,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-05
+        17:00","temp_f":74.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        18:00","temp_f":72.6,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-05
+        19:00","temp_f":72.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        20:00","temp_f":72.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        21:00","temp_f":72.4,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-05
+        22:00","temp_f":71.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-05
+        23:00","temp_f":71.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]},{"date":"2024-08-06","day":{"maxtemp_f":95.6,"mintemp_f":69.1,"avgtemp_f":79.6,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:04
+        AM","sunset":"08:07 PM"},"hour":[{"time":"2024-08-06 00:00","temp_f":70.8,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        01:00","temp_f":70.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        02:00","temp_f":70.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        03:00","temp_f":70.1,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        04:00","temp_f":69.8,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        05:00","temp_f":69.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        06:00","temp_f":69.8,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        07:00","temp_f":71.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        08:00","temp_f":74.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        09:00","temp_f":77.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        10:00","temp_f":81.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        11:00","temp_f":84.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        12:00","temp_f":88.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        13:00","temp_f":91.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        14:00","temp_f":93.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        15:00","temp_f":89.5,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        16:00","temp_f":90.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        17:00","temp_f":89.9,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-06
+        18:00","temp_f":86.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        19:00","temp_f":82.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        20:00","temp_f":80.6,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-06
+        21:00","temp_f":79.4,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        22:00","temp_f":78.4,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        23:00","temp_f":77.4,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]},{"date":"2024-08-07","day":{"maxtemp_f":99.3,"mintemp_f":73.0,"avgtemp_f":81.4,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:05
+        AM","sunset":"08:05 PM"},"hour":[{"time":"2024-08-07 00:00","temp_f":76.5,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        01:00","temp_f":75.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        02:00","temp_f":75.0,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        03:00","temp_f":74.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        04:00","temp_f":73.6,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        05:00","temp_f":73.3,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        06:00","temp_f":73.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        07:00","temp_f":75.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        08:00","temp_f":79.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        09:00","temp_f":84.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        10:00","temp_f":88.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        11:00","temp_f":92.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        12:00","temp_f":95.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        13:00","temp_f":97.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        14:00","temp_f":91.6,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-07
+        15:00","temp_f":90.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        16:00","temp_f":88.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        17:00","temp_f":86.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        18:00","temp_f":83.3,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-07
+        19:00","temp_f":78.4,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-07
+        20:00","temp_f":75.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        21:00","temp_f":74.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-07
+        22:00","temp_f":74.1,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        23:00","temp_f":73.6,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]},{"date":"2024-08-08","day":{"maxtemp_f":87.1,"mintemp_f":66.3,"avgtemp_f":73.1,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:06
+        AM","sunset":"08:04 PM"},"hour":[{"time":"2024-08-08 00:00","temp_f":73.1,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        01:00","temp_f":72.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        02:00","temp_f":70.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        03:00","temp_f":69.4,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        04:00","temp_f":68.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        05:00","temp_f":68.1,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        06:00","temp_f":67.9,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        07:00","temp_f":68.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        08:00","temp_f":69.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        09:00","temp_f":71.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        10:00","temp_f":74.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        11:00","temp_f":77.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        12:00","temp_f":81.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        13:00","temp_f":84.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        14:00","temp_f":83.2,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-08
+        15:00","temp_f":79.9,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-08
+        16:00","temp_f":75.9,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-08
+        17:00","temp_f":74.0,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-08
+        18:00","temp_f":72.5,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-08
+        19:00","temp_f":71.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-08
+        20:00","temp_f":71.3,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-08
+        21:00","temp_f":70.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-08
+        22:00","temp_f":68.5,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-08
+        23:00","temp_f":66.2,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]},{"date":"2024-08-09","day":{"maxtemp_f":78.1,"mintemp_f":63.8,"avgtemp_f":69.0,"condition":{"text":"Moderate
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/302.png"}},"astro":{"sunrise":"06:07
+        AM","sunset":"08:03 PM"},"hour":[{"time":"2024-08-09 00:00","temp_f":65.1,"condition":{"text":"Light
+        drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/266.png"}},{"time":"2024-08-09
+        01:00","temp_f":64.5,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2024-08-09
+        02:00","temp_f":64.2,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2024-08-09
+        03:00","temp_f":64.0,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2024-08-09
+        04:00","temp_f":63.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        05:00","temp_f":63.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        06:00","temp_f":64.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        07:00","temp_f":64.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        08:00","temp_f":65.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        09:00","temp_f":67.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        10:00","temp_f":70.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        11:00","temp_f":73.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        12:00","temp_f":75.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        13:00","temp_f":76.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        14:00","temp_f":76.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        15:00","temp_f":75.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        16:00","temp_f":72.9,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-09
+        17:00","temp_f":72.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        18:00","temp_f":71.2,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        19:00","temp_f":69.9,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/353.png"}},{"time":"2024-08-09
+        20:00","temp_f":68.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        21:00","temp_f":67.9,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2024-08-09
+        22:00","temp_f":67.3,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        23:00","temp_f":66.8,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}}]}]}}'
+  recorded_at: Mon, 05 Aug 2024 16:54:30 GMT
+- request:
+    method: get
+    uri: https://openlibrary.org/search.json?limit=5&title=denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.18.0 (Ubuntu)
+      Date:
+      - Mon, 05 Aug 2024 16:54:33 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Method:
+      - GET, OPTIONS
+      Access-Control-Max-Age:
+      - '86400'
+      X-Ol-Stats:
+      - '"SR 1 2.318 TT 0 2.320"'
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+            "numFound": 39,
+            "start": 0,
+            "numFoundExact": true,
+            "docs": [
+                {
+                    "author_key": [
+                        "OL2843451A"
+                    ],
+                    "author_name": [
+                        "Universal Map"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10909613M"
+                    ],
+                    "first_publish_year": 2001,
+                    "format": [
+                        "Paperback"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "9780762507849",
+                        "0762507845"
+                    ],
+                    "key": "/works/OL8503198W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1338943517,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "January 2001"
+                    ],
+                    "publish_year": [
+                        2001
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "seed": [
+                        "/books/OL10909613M",
+                        "/works/OL8503198W",
+                        "/authors/OL2843451A"
+                    ],
+                    "title": "Denver, Co",
+                    "title_suggest": "Denver, Co",
+                    "title_sort": "Denver, Co",
+                    "type": "work",
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1795929215941476352,
+                    "author_facet": [
+                        "OL2843451A Universal Map"
+                    ]
+                },
+                {
+                    "author_alternative_name": [
+                        "Geological Survey (U.S.)",
+                        "United States. Geological survey.",
+                        "Geological Survey (U. S.)",
+                        "U.S. Geological Survey",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U.S.) 088",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945157M"
+                    ],
+                    "first_publish_year": 1996,
+                    "format": [
+                        "Unknown Binding"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "0607620056",
+                        "9780607620054"
+                    ],
+                    "key": "/works/OL896607W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "seed": [
+                        "/books/OL10945157M",
+                        "/works/OL896607W",
+                        "/authors/OL79165A"
+                    ],
+                    "subtitle": "39105, digital raster graphic data",
+                    "title": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_suggest": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "title_sort": "Denver west, CO and Bailey, CO: Denver, CO",
+                    "type": "work",
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1795930279598096384,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "author_alternative_name": [
+                        "Geological Survey (U.S.)",
+                        "United States. Geological survey.",
+                        "Geological Survey (U. S.)",
+                        "U.S. Geological Survey",
+                        "United States. Geological Survey",
+                        "United States. Geological Survey.",
+                        "Geological Survey. (U.S.)",
+                        "Geological Survey (U.S.) 088",
+                        "Geological Survey (U .S.)"
+                    ],
+                    "author_key": [
+                        "OL79165A"
+                    ],
+                    "author_name": [
+                        "United States Geological Survey"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10945156M"
+                    ],
+                    "first_publish_year": 1996,
+                    "format": [
+                        "Unknown Binding"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "0607620048",
+                        "9780607620047"
+                    ],
+                    "key": "/works/OL896605W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1272517172,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "1996"
+                    ],
+                    "publish_year": [
+                        1996
+                    ],
+                    "publisher": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "seed": [
+                        "/books/OL10945156M",
+                        "/works/OL896605W",
+                        "/authors/OL79165A"
+                    ],
+                    "subtitle": "39104, digital raster graphic data",
+                    "title": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_suggest": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "title_sort": "Denver East, CO and Castle Rock, CO: Denver, CO",
+                    "type": "work",
+                    "publisher_facet": [
+                        "USGS Branch of Distribution"
+                    ],
+                    "_version_": 1795930279580270593,
+                    "author_facet": [
+                        "OL79165A United States Geological Survey"
+                    ]
+                },
+                {
+                    "cover_edition_key": "OL7772425M",
+                    "cover_i": 13060547,
+                    "ebook_access": "borrowable",
+                    "ebook_count_i": 1,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL7772425M"
+                    ],
+                    "first_publish_year": 1994,
+                    "format": [
+                        "Paperback"
+                    ],
+                    "has_fulltext": true,
+                    "ia": [
+                        "denverregionalcl0000pier"
+                    ],
+                    "ia_collection": [
+                        "inlibrary",
+                        "internetarchivebooks",
+                        "printdisabled"
+                    ],
+                    "ia_collection_s": "inlibrary;internetarchivebooks;printdisabled",
+                    "isbn": [
+                        "0528952714",
+                        "9780528952715"
+                    ],
+                    "key": "/works/OL31554740W",
+                    "last_modified_i": 1670927738,
+                    "lending_edition_s": "OL7772425M",
+                    "lending_identifier_s": "denverregionalcl0000pier",
+                    "printdisabled_s": "OL7772425M",
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "June 1994"
+                    ],
+                    "publish_year": [
+                        1994
+                    ],
+                    "publisher": [
+                        "Rand McNally & Company"
+                    ],
+                    "seed": [
+                        "/books/OL7772425M",
+                        "/works/OL31554740W"
+                    ],
+                    "title": "Denver Regional, CO",
+                    "title_suggest": "Denver Regional, CO",
+                    "title_sort": "Denver Regional, CO",
+                    "type": "work",
+                    "id_librarything": [
+                        "9032702"
+                    ],
+                    "publisher_facet": [
+                        "Rand McNally & Company"
+                    ],
+                    "_version_": 1795902419989692416
+                },
+                {
+                    "author_key": [
+                        "OL882946A"
+                    ],
+                    "author_name": [
+                        "Laura Ryder"
+                    ],
+                    "ebook_access": "no_ebook",
+                    "ebook_count_i": 0,
+                    "edition_count": 1,
+                    "edition_key": [
+                        "OL10911511M"
+                    ],
+                    "first_publish_year": 2003,
+                    "format": [
+                        "Map"
+                    ],
+                    "has_fulltext": false,
+                    "isbn": [
+                        "0762557362",
+                        "9780762557363"
+                    ],
+                    "key": "/works/OL4437736W",
+                    "language": [
+                        "eng"
+                    ],
+                    "last_modified_i": 1260838560,
+                    "public_scan_b": false,
+                    "publish_date": [
+                        "January 2003"
+                    ],
+                    "publish_year": [
+                        2003
+                    ],
+                    "publisher": [
+                        "Universal Map Enterprises"
+                    ],
+                    "seed": [
+                        "/books/OL10911511M",
+                        "/works/OL4437736W",
+                        "/authors/OL882946A"
+                    ],
+                    "title": "Denver Co Deluxe Flip Map",
+                    "title_suggest": "Denver Co Deluxe Flip Map",
+                    "title_sort": "Denver Co Deluxe Flip Map",
+                    "type": "work",
+                    "publisher_facet": [
+                        "Universal Map Enterprises"
+                    ],
+                    "_version_": 1795918450276696064,
+                    "author_facet": [
+                        "OL882946A Laura Ryder"
+                    ]
+                }
+            ],
+            "num_found": 39,
+            "q": "",
+            "offset": null
+        }
+  recorded_at: Mon, 05 Aug 2024 16:54:33 GMT
+recorded_with: VCR 6.2.0

@@ -2,7 +2,7 @@ class BookWeatherSerializer
   def initialize(weather_data, book_list, location)
     @weather_data = weather_data
     @book_list = book_list
-    @location = locaton
+    @location = location
   end
 
   def serialize_json

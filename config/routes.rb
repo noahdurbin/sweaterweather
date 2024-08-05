@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       resources :users, only: %i[create]
 
+      get '/book-search', to: 'book#search'
       post '/sessions', to: 'users#login'
       get '/forecast', to: 'weather#forecast'
     end
