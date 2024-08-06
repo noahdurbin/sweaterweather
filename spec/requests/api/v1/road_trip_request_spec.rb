@@ -28,6 +28,19 @@ RSpec.describe 'Road Trip' do
       expect(response).to_not be_successful
     end
 
+    it 'can take two cities and calculate, driving time, and weather upon arrival for other cities', :vcr do
+      user1 = User.create!(email: 'user1@test.com', password: 'password', password_confirmation: 'password', api_key: SecureRandom.hex)
+
+      road_trip_body = {
+        origin: "Denver,CO",
+        destination: "Colorado Springs,CO",
+        api_key: user1.api_key
+      }
+      post '/api/v1/road_trip', params: road_trip_body
+
+      expect(response).to be_successful
+    end
+
     it "contains the expected response body" do
       VCR.use_cassette "/Road_Trip/road_trip_endpoint/needs_an_api_to_function" do
         user1 = User.create!(email: 'user1@test.com', password: 'password', password_confirmation: 'password', api_key: SecureRandom.hex)
@@ -57,6 +70,42 @@ RSpec.describe 'Road Trip' do
         expect(json_response[:data][:attributes][:weather_at_eta]).to have_key :condition
         expect(json_response[:data][:attributes][:weather_at_eta].count).to eq 3
       end
+    end
+
+    it 'gives the correct response for an impossible trip', :vcr do
+      user1 = User.create!(email: 'user1@test.com', password: 'password', password_confirmation: 'password', api_key: SecureRandom.hex)
+      road_trip_body = {
+        origin: "New York,NY",
+        destination: "London,UK",
+        api_key: user1.api_key
+      }
+      post '/api/v1/road_trip', params: road_trip_body
+      json_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(json_response).to eq({
+          "data": {
+              "id": nil,
+              "type": "road_trip",
+              "attributes": {
+                  "start_city": "New York,NY",
+                  "end_city": "London,UK",
+                  "travel_time": "impossible",
+                  "weather_at_eta": {}
+              }
+          }
+      })
+    end
+
+    it 'can calculate a response for a trip over 24 hours', :vcr do
+      user1 = User.create!(email: 'user1@test.com', password: 'password', password_confirmation: 'password', api_key: SecureRandom.hex)
+      road_trip_body = {
+        origin: "New York,NY",
+        destination: "Panama City,Panama",
+        api_key: user1.api_key
+      }
+      post '/api/v1/road_trip', params: road_trip_body
+
+      expect(response).to be_successful
     end
   end
 end
