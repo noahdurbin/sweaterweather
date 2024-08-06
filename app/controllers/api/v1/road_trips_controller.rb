@@ -8,7 +8,6 @@ class Api::V1::RoadTripsController < ApplicationController
   private
 
   def authenticate_key
-    binding.pry
     api_key = params[:api_key]
     @api_key = User.find_by(api_key: api_key)
 
