@@ -3,6 +3,7 @@ class RoadTripSerializer
     @trip = trip
     @weather_on_arrival = weather_on_arrival
   end
+
   def serialize_json
     {
       data: {

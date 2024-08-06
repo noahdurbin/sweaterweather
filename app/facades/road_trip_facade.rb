@@ -3,6 +3,6 @@ class RoadTripFacade
     trip = MapquestService.new.hours(params[:origin], params[:destination])
     weather = WeatherFacade.new.get_weather(params[:destination])
     weather_on_arrival = weather.future_weather(trip.time)
-    RoadTripSerializer.new(trip, weather_on_arrival)
+    RoadTripSerializer.new(trip, weather_on_arrival).serialize_json
   end
 end
