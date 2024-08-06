@@ -1,13 +1,17 @@
 class RoadTripFacade
   def new_trip(params)
-    trip = MapquestService.new.hours(params[:origin], params[:destination])
+    if (params[:origin] != "") && (params[:destination] != "")
+      trip = MapquestService.new.trip(params[:origin], params[:destination])
 
-    if trip.nil?
-      impossible_trip_response(params[:origin], params[:destination])
+      if trip.nil?
+        impossible_trip_response(params[:origin], params[:destination])
+      else
+        weather = WeatherFacade.new.get_weather(params[:destination])
+        weather_on_arrival = weather.future_weather(trip.time)
+        RoadTripSerializer.new(trip, weather_on_arrival).serialize_json
+      end
     else
-      weather = WeatherFacade.new.get_weather(params[:destination])
-      weather_on_arrival = weather.future_weather(trip.time)
-      RoadTripSerializer.new(trip, weather_on_arrival).serialize_json
+      ErrorSerializer.new(ErrorMessage.new("Must Provide Location", 404))
     end
   end
 

@@ -9,7 +9,7 @@ class MapquestService
     Location.new(location_hash)
   end
 
-  def hours(origin, destination)
+  def trip(origin, destination)
     response = conn.get("/directions/v2/route?from=#{origin}&to=#{destination}")
     directions_hash = JSON.parse(response.body, symbolize_names: true)
 

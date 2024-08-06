@@ -25,7 +25,21 @@ RSpec.describe 'retrieves the weather for given location' do
     expect(report[:data][:attributes][:hourly_weather]).to be_a Array
     expect(report[:data][:attributes][:hourly_weather].count).to eq 24
 
-    expect(report[:data][:attributes][:daily_weather].first.count).to eq 7
+    expect(report[:data][:attributes][:daily_weather].first.count).to eq 8
     expect(report[:data][:attributes][:hourly_weather].first.count).to eq 4
+  end
+
+  it 'requires user to provide a location', :vcr do
+    get "/api/v1/forecast?location="
+
+    json_response = JSON.parse(response.body, symbolize_names: true)
+    expect(json_response).to eq(
+      {
+          "error": {
+              "message": "Must Provide Location",
+              "status": 404
+          }
+      }
+    )
   end
 end

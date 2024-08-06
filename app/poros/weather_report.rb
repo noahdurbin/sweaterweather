@@ -24,6 +24,7 @@ class WeatherReport
         sunset: day[:astro][:sunset],
         max_temp: day[:day][:maxtemp_f],
         min_temp: day[:day][:mintemp_f],
+        avg_temp: day[:day][:avgtemp_f],
         condition: day[:day][:condition][:text],
         icon: day[:day][:condition][:icon]
       }
@@ -46,7 +47,7 @@ class WeatherReport
       @hourly_weather_array[(time - 1)]
     else
       days = (time / 24).ceil
-      @daily_weather_array[(days - 1)]
+      @daily_weather_array[(days)]
     end
   end
 end
