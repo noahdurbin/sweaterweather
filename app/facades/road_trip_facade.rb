@@ -1,6 +1,6 @@
 class RoadTripFacade
   def new_trip(params)
-    trip = MapquestService.new.hours(params[:origin], params[:destination])
+    trip = MapquestService.new.trip(params[:origin], params[:destination])
 
     if trip.nil?
       impossible_trip_response(params[:origin], params[:destination])
