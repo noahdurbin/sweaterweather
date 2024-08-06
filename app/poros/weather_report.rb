@@ -40,4 +40,13 @@ class WeatherReport
       }
     end
   end
+
+  def future_weather(time)
+    if time <= 24
+      @hourly_weather_array[(time - 1)]
+    else
+      days = (time / 24).ceil
+      @daily_weather_array[(days - 1)]
+    end
+  end
 end

@@ -1,0 +1,284 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=map_key&to=Colorado%20Springs,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:58:22 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '8601'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - bd6e4280-539f-11ef-83a5-23a6754b8cf2
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Transaction-Count:
+      - all=3,geocoding=2,directions=1
+      Etag:
+      - W/"2199-eTyYRWtUWBtncuRjG8BLH6Gfm6w"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJyb3V0ZSI6eyJzZXNzaW9uSWQiOiJBSGtBX3ZfX193WUFBUUNzQUFBQWVOcGpXTVBBd01UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0J3V04xTXN4MFU1RlRERHJOZ0FYQVRGajB1QTlzd3RiTmVoT1llS1lkTFRVMXpwMGJEYVBEZ2JRcGtHYkFBVnoxcHk3WURLUWJWRms0Z25nRlFFSU9FSmtBVVphRExBQnVkQ1l5T3FKZmFBOmNhciIsInJlYWxUaW1lIjo0MDM2LCJkaXN0YW5jZSI6NzAuNDYxNiwidGltZSI6Mzc4NywiZm9ybWF0dGVkVGltZSI6IjAxOjAzOjA3IiwiaGFzSGlnaHdheSI6dHJ1ZSwiaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNCcmlkZ2UiOnRydWUsImhhc1NlYXNvbmFsQ2xvc3VyZSI6ZmFsc2UsImhhc1R1bm5lbCI6ZmFsc2UsImhhc0ZlcnJ5IjpmYWxzZSwiaGFzVW5wYXZlZCI6ZmFsc2UsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJoYXNDb3VudHJ5Q3Jvc3MiOmZhbHNlLCJsZWdzIjpbeyJpbmRleCI6MCwiaGFzVG9sbFJvYWQiOmZhbHNlLCJoYXNIaWdod2F5Ijp0cnVlLCJoYXNCcmlkZ2UiOnRydWUsImhhc1VucGF2ZWQiOmZhbHNlLCJoYXNUdW5uZWwiOmZhbHNlLCJoYXNTZWFzb25hbENsb3N1cmUiOmZhbHNlLCJoYXNGZXJyeSI6ZmFsc2UsImhhc0NvdW50cnlDcm9zcyI6ZmFsc2UsImhhc1RpbWVkUmVzdHJpY3Rpb24iOmZhbHNlLCJkaXN0YW5jZSI6NzAuNDYxNiwidGltZSI6NDAzNiwiZm9ybWF0dGVkVGltZSI6IjAxOjA3OjE2Iiwib3JpZ0luZGV4IjowLCJvcmlnTmFycmF0aXZlIjoiIiwiZGVzdEluZGV4IjowLCJkZXN0TmFycmF0aXZlIjoiIiwibWFuZXV2ZXJzIjpbeyJpbmRleCI6MCwiZGlzdGFuY2UiOjAuMDE5MywibmFycmF0aXZlIjoiSGVhZCB0b3dhcmQgQ2hlcm9rZWUgU3Qgb24gVyBDb2xmYXggQXZlIChJLTcwLUJMIEUpLiBHbyBmb3IgMTAyIGZ0LiIsInRpbWUiOjEzLCJkaXJlY3Rpb24iOjgsImRpcmVjdGlvbk5hbWUiOiJFYXN0Iiwic2lnbnMiOltdLCJtYW5ldXZlck5vdGVzIjpbXSwiZm9ybWF0dGVkVGltZSI6IjAwOjAwOjEzIiwidHJhbnNwb3J0TW9kZSI6ImNhciIsInN0YXJ0UG9pbnQiOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwidHVyblR5cGUiOjAsImF0dHJpYnV0ZXMiOjAsImljb25VcmwiOiIiLCJzdHJlZXRzIjpbIkktNzAtQkwiLCJVUy00MCIsIlVTLTI4NyIsIlcgQ29sZmF4IEF2ZSJdLCJtYXBVcmwiOiJodHRwczovL3d3dy5tYXBxdWVzdGFwaS5jb20vc3RhdGljbWFwL3Y1L21hcD9rZXk9bWFwX2tleSZzaXplPTIyNSwxNjAmbG9jYXRpb25zPTM5Ljc0MDAxLC0xMDQuOTkyMDJ8bWFya2VyLTF8fDM5Ljc0MDAxLC0xMDQuOTkxNjZ8bWFya2VyLTJ8fCZjZW50ZXI9MzkuNzQwMDEsLTEwNC45OTE4NCZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNiZzZXNzaW9uPUFIa0Ffdl9fX3dZQUFRQ3NBQUFBZU5waldNUEF3TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQndXTjFNc3gwVTVGVEREck5nQVhBVEZqMHVBOXN3dGJOZWhPWWVLWWRMVFUxenAwYkRhUERnYlFwa0diQUFWejFweTdZREtRYlZGazRnbmdGUUVJT0VKa0FVWmFETEFCdWRDWXlPcUpmYUE6Y2FyIn0seyJpbmRleCI6MSwiZGlzdGFuY2UiOjAuOTg2MSwibmFycmF0aXZlIjoiTWFrZSBhIFUtVHVybiBhdCBDaGVyb2tlZSBTdCBvbnRvIFcgQ29sZmF4IEF2ZSAoSS03MC1CTCBXKS4gR28gZm9yIDEuMCBtaS4iLCJ0aW1lIjoxNjksImRpcmVjdGlvbiI6NywiZGlyZWN0aW9uTmFtZSI6Ildlc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDI6NDkiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkxNjZ9LCJ0dXJuVHlwZSI6OSwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiSS03MC1CTCIsIlVTLTQwIiwiVVMtMjg3IiwiVyBDb2xmYXggQXZlIl0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1tYXBfa2V5JnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzQwMDEsLTEwNC45OTE2NnxtYXJrZXItMnx8MzkuNzQwMzYwMDAwMDAwMDMsLTEwNS4wMDk5NTk5OTk5OTk5OHxtYXJrZXItM3x8JmNlbnRlcj0zOS43NDAxODUwMDAwMDAwMSwtMTA1LjAwMDgwOTk5OTk5OTk5JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTEzJnNlc3Npb249QUhrQV92X19fd1lBQVFDc0FBQUFlTnBqV01QQXdNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9Cd1dOMU1zeDBVNUZURERyTmdBWEFURmowdUE5c3d0Yk5laE9ZZUtZZExUVTF6cDBiRGFQRGdiUXBrR2JBQVZ6MXB5N1lES1FiVkZrNGduZ0ZRRUlPRUprQVVaYURMQUJ1ZENZeU9xSmZhQTpjYXIifSx7ImluZGV4IjoyLCJkaXN0YW5jZSI6NjguNTAxOCwibmFycmF0aXZlIjoiVGFrZSByYW1wIG9udG8gSS0yNSBTIChOIFZhbGxleSBId3kpIHRvd2FyZCBDb2xvIFNwZ3MuIEdvIGZvciA2OC41IG1pLiIsInRpbWUiOjM3MDgsImRpcmVjdGlvbiI6NCwiZGlyZWN0aW9uTmFtZSI6IlNvdXRoIiwic2lnbnMiOltdLCJtYW5ldXZlck5vdGVzIjpbXSwiZm9ybWF0dGVkVGltZSI6IjAxOjAxOjQ4IiwidHJhbnNwb3J0TW9kZSI6ImNhciIsInN0YXJ0UG9pbnQiOnsibGF0IjozOS43NDAzNjAwMDAwMDAwMywibG5nIjotMTA1LjAwOTk1OTk5OTk5OTk4fSwidHVyblR5cGUiOjEyLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6WyJJLTI1IiwiVVMtODciLCJOIFZhbGxleSBId3kiLCJVUy04NSIsIkNPLTg4Il0sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1tYXBfa2V5JnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzkuNzQwMzYwMDAwMDAwMDMsLTEwNS4wMDk5NTk5OTk5OTk5OHxtYXJrZXItM3x8MzguODQxMjg5OTk5OTk5OSwtMTA0LjgzMDIxOTk5OTk5OTU4fG1hcmtlci00fHwmY2VudGVyPTM5LjI5MDgyNDk5OTk5OTk3LC0xMDQuOTIwMDg5OTk5OTk5NzkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209NyZzZXNzaW9uPUFIa0Ffdl9fX3dZQUFRQ3NBQUFBZU5waldNUEF3TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQndXTjFNc3gwVTVGVEREck5nQVhBVEZqMHVBOXN3dGJOZWhPWWVLWWRMVFUxenAwYkRhUERnYlFwa0diQUFWejFweTdZREtRYlZGazRnbmdGUUVJT0VKa0FVWmFETEFCdWRDWXlPcUpmYUE6Y2FyIn0seyJpbmRleCI6MywiZGlzdGFuY2UiOjAuMzAwMSwibmFycmF0aXZlIjoiVGFrZSBleGl0IDE0MiB0b3dhcmQgQmlqb3UgU3RyZWV0LiBHbyBmb3IgMC4zIG1pLiIsInRpbWUiOjQyLCJkaXJlY3Rpb24iOjQsImRpcmVjdGlvbk5hbWUiOiJTb3V0aCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDo0MiIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzguODQxMjg5OTk5OTk5OSwibG5nIjotMTA0LjgzMDIxOTk5OTk5OTU4fSwidHVyblR5cGUiOjE0LCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6W10sIm1hcFVybCI6Imh0dHBzOi8vd3d3Lm1hcHF1ZXN0YXBpLmNvbS9zdGF0aWNtYXAvdjUvbWFwP2tleT1tYXBfa2V5JnNpemU9MjI1LDE2MCZsb2NhdGlvbnM9MzguODQxMjg5OTk5OTk5OSwtMTA0LjgzMDIxOTk5OTk5OTU4fG1hcmtlci00fHwzOC44MzY5NTk5OTk5OTk5LC0xMDQuODMwNzg5OTk5OTk5NjF8bWFya2VyLTV8fCZjZW50ZXI9MzguODM5MTI0OTk5OTk5ODk2LC0xMDQuODMwNTA0OTk5OTk5NTkmZGVmYXVsdE1hcmtlcj1ub25lJnpvb209MTQmc2Vzc2lvbj1BSGtBX3ZfX193WUFBUUNzQUFBQWVOcGpXTVBBd01UQXdNQ2VrVnFVYXBXY0s4cHBMQTNrTWlpWWJOX0J3V04xTXN4MFU1RlRERHJOZ0FYQVRGajB1QTlzd3RiTmVoT1llS1lkTFRVMXpwMGJEYVBEZ2JRcGtHYkFBVnoxcHk3WURLUWJWRms0Z25nRlFFSU9FSmtBVVphRExBQnVkQ1l5T3FKZmFBOmNhciJ9LHsiaW5kZXgiOjQsImRpc3RhbmNlIjowLjE1MSwibmFycmF0aXZlIjoiVHVybiBsZWZ0IG9udG8gVyBCaWpvdSBTdC4gR28gZm9yIDAuMiBtaS4iLCJ0aW1lIjoyMiwiZGlyZWN0aW9uIjo4LCJkaXJlY3Rpb25OYW1lIjoiRWFzdCIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDoyMiIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzguODM2OTU5OTk5OTk5OSwibG5nIjotMTA0LjgzMDc4OTk5OTk5OTYxfSwidHVyblR5cGUiOjYsImF0dHJpYnV0ZXMiOjAsImljb25VcmwiOiIiLCJzdHJlZXRzIjpbIlcgQmlqb3UgU3QiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PW1hcF9rZXkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOC44MzY5NTk5OTk5OTk5LC0xMDQuODMwNzg5OTk5OTk5NjF8bWFya2VyLTV8fDM4LjgzNjkwOTk5OTk5OTg4LC0xMDQuODI3OTg5OTk5OTk5NTl8bWFya2VyLTZ8fCZjZW50ZXI9MzguODM2OTM0OTk5OTk5ODksLTEwNC44MjkzODk5OTk5OTk1OSZkZWZhdWx0TWFya2VyPW5vbmUmem9vbT0xNSZzZXNzaW9uPUFIa0Ffdl9fX3dZQUFRQ3NBQUFBZU5waldNUEF3TVRBd01DZWtWcVVhcFdjSzhwcExBM2tNaWlZYk5fQndXTjFNc3gwVTVGVEREck5nQVhBVEZqMHVBOXN3dGJOZWhPWWVLWWRMVFUxenAwYkRhUERnYlFwa0diQUFWejFweTdZREtRYlZGazRnbmdGUUVJT0VKa0FVWmFETEFCdWRDWXlPcUpmYUE6Y2FyIn0seyJpbmRleCI6NSwiZGlzdGFuY2UiOjAuMzgxNSwibmFycmF0aXZlIjoiVHVybiByaWdodCBvbnRvIFcgS2lvd2EgU3QuIEdvIGZvciAwLjQgbWkuIiwidGltZSI6NjMsImRpcmVjdGlvbiI6OCwiZGlyZWN0aW9uTmFtZSI6IkVhc3QiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDE6MDMiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM4LjgzNjkwOTk5OTk5OTg4LCJsbmciOi0xMDQuODI3OTg5OTk5OTk5NTl9LCJ0dXJuVHlwZSI6MiwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiVyBLaW93YSBTdCIsIkUgS2lvd2EgU3QiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PW1hcF9rZXkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOC44MzY5MDk5OTk5OTk4OCwtMTA0LjgyNzk4OTk5OTk5OTU5fG1hcmtlci02fHwzOC44MzUyODk5OTk5OTk4NywtMTA0LjgyMTcxOTk5OTk5OTU3fG1hcmtlci03fHwmY2VudGVyPTM4LjgzNjA5OTk5OTk5OTg3NCwtMTA0LjgyNDg1NDk5OTk5OTU5JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTE0JnNlc3Npb249QUhrQV92X19fd1lBQVFDc0FBQUFlTnBqV01QQXdNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9Cd1dOMU1zeDBVNUZURERyTmdBWEFURmowdUE5c3d0Yk5laE9ZZUtZZExUVTF6cDBiRGFQRGdiUXBrR2JBQVZ6MXB5N1lES1FiVkZrNGduZ0ZRRUlPRUprQVVaYURMQUJ1ZENZeU9xSmZhQTpjYXIifSx7ImluZGV4Ijo2LCJkaXN0YW5jZSI6MC4xMjE4LCJuYXJyYXRpdmUiOiJUdXJuIHJpZ2h0IG9udG8gTiBOZXZhZGEgQXZlIChVUy04NSBTKS4gR28gZm9yIDAuMSBtaS4iLCJ0aW1lIjoxOSwiZGlyZWN0aW9uIjo0LCJkaXJlY3Rpb25OYW1lIjoiU291dGgiLCJzaWducyI6W10sIm1hbmV1dmVyTm90ZXMiOltdLCJmb3JtYXR0ZWRUaW1lIjoiMDA6MDA6MTkiLCJ0cmFuc3BvcnRNb2RlIjoiY2FyIiwic3RhcnRQb2ludCI6eyJsYXQiOjM4LjgzNTI4OTk5OTk5OTg3LCJsbmciOi0xMDQuODIxNzE5OTk5OTk5NTd9LCJ0dXJuVHlwZSI6MiwiYXR0cmlidXRlcyI6MCwiaWNvblVybCI6IiIsInN0cmVldHMiOlsiVVMtODUiLCJOIE5ldmFkYSBBdmUiLCJTIE5ldmFkYSBBdmUiXSwibWFwVXJsIjoiaHR0cHM6Ly93d3cubWFwcXVlc3RhcGkuY29tL3N0YXRpY21hcC92NS9tYXA/a2V5PW1hcF9rZXkmc2l6ZT0yMjUsMTYwJmxvY2F0aW9ucz0zOC44MzUyODk5OTk5OTk4NywtMTA0LjgyMTcxOTk5OTk5OTU3fG1hcmtlci03fHwzOC44MzM1MTk5OTk5OTk4NywtMTA0LjgyMTgxNDk5OTk5OTU3fG1hcmtlci04fHwmY2VudGVyPTM4LjgzNDQwNDk5OTk5OTg3NiwtMTA0LjgyMTc2NzQ5OTk5OTU3JmRlZmF1bHRNYXJrZXI9bm9uZSZ6b29tPTE2JnNlc3Npb249QUhrQV92X19fd1lBQVFDc0FBQUFlTnBqV01QQXdNVEF3TUNla1ZxVWFwV2NLOHBwTEEza01paVliTl9Cd1dOMU1zeDBVNUZURERyTmdBWEFURmowdUE5c3d0Yk5laE9ZZUtZZExUVTF6cDBiRGFQRGdiUXBrR2JBQVZ6MXB5N1lES1FiVkZrNGduZ0ZRRUlPRUprQVVaYURMQUJ1ZENZeU9xSmZhQTpjYXIifSx7ImluZGV4Ijo3LCJkaXN0YW5jZSI6MCwibmFycmF0aXZlIjoiQXJyaXZlIGF0IFMgTmV2YWRhIEF2ZSAoVVMtODUgUykuIiwidGltZSI6MCwiZGlyZWN0aW9uIjowLCJkaXJlY3Rpb25OYW1lIjoiTm9uZSIsInNpZ25zIjpbXSwibWFuZXV2ZXJOb3RlcyI6W10sImZvcm1hdHRlZFRpbWUiOiIwMDowMDowMCIsInRyYW5zcG9ydE1vZGUiOiJjYXIiLCJzdGFydFBvaW50Ijp7ImxhdCI6MzguODMzNTE5OTk5OTk5ODcsImxuZyI6LTEwNC44MjE4MTQ5OTk5OTk1N30sInR1cm5UeXBlIjowLCJhdHRyaWJ1dGVzIjowLCJpY29uVXJsIjoiIiwic3RyZWV0cyI6W119XX1dLCJvcHRpb25zIjp7InJvdXRlVHlwZSI6IkZBU1RFU1QiLCJuYXJyYXRpdmVUeXBlIjoidGV4dCIsImVuaGFuY2VkTmFycmF0aXZlIjpmYWxzZSwid2Fsa2luZ1NwZWVkIjotMSwiaGlnaHdheUVmZmljaWVuY3kiOjIyLCJhdm9pZHMiOmZhbHNlLCJnZW5lcmFsaXplIjotMSwic2hhcGVGb3JtYXQiOiJyYXciLCJ1bml0IjoiTSIsImxvY2FsZSI6ImVuX1VTIiwidXNlVHJhZmZpYyI6ZmFsc2UsInRpbWVUeXBlIjowLCJkYXRlVHlwZSI6MCwiZG9SZXZlcnNlR2VvY29kZSI6dHJ1ZSwibWFuTWFwcyI6dHJ1ZSwidG9sbENvc3QiOmZhbHNlLCJzaWRlT2ZTdHJlZXREaXNwbGF5Ijp0cnVlfSwiYm91bmRpbmdCb3giOnsidWwiOnsibGF0IjozOS43NDE5NjAwMDAwMDAwNCwibG5nIjotMTA1LjAxNTg1OTk5OTk5OTk2fSwibHIiOnsibGF0IjozOC44MzM1MTk5OTk5OTk4NywibG5nIjotMTA0LjgwMTI0OTk5OTk5OTY4fX0sIm5hbWUiOiJJLTI1IiwibWF4Um91dGVzIjoiIiwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifSx7InN0cmVldCI6IiIsImFkbWluQXJlYTYiOiIiLCJhZG1pbkFyZWE2VHlwZSI6Ik5laWdoYm9yaG9vZCIsImFkbWluQXJlYTUiOiJDb2xvcmFkbyBTcHJpbmdzIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkVsIFBhc28iLCJhZG1pbkFyZWE0VHlwZSI6IkNvdW50eSIsImFkbWluQXJlYTMiOiJDTyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiVVMiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6MzguODMzNTIsImxuZyI6LTEwNC44MjE4MX0sImRpc3BsYXlMYXRMbmciOnsibGF0IjozOC44MzM1MiwibG5nIjotMTA0LjgyMTgxfSwibWFwVXJsIjoiIn1dLCJsb2NhdGlvblNlcXVlbmNlIjpbMCwxXX0sImluZm8iOnsic3RhdHVzY29kZSI6MCwiY29weXJpZ2h0Ijp7InRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIiwiaW1hZ2VVcmwiOiJodHRwOi8vYXBpLm1xY2RuLmNvbS9yZXMvbXFsb2dvLmdpZiIsImltYWdlQWx0VGV4dCI6IsKpIDIwMjQgTWFwUXVlc3QsIEluYy4ifSwibWVzc2FnZXMiOltdfX0=
+  recorded_at: Tue, 06 Aug 2024 02:58:22 GMT
+- request:
+    method: get
+    uri: https://www.mapquestapi.com/geocoding/v1/address?key=map_key&location=Colorado%20Springs,CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:58:23 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '818'
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - MapQuest
+      X-Request-Id:
+      - be40fbd0-539f-11ef-924c-658f38139183
+      Access-Control-Allow-Origin:
+      - "*"
+      Etag:
+      - W/"332-2/XyFYyf29MgIhp8M6fr2SyiTFU"
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyNCBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDI0IE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJDb2xvcmFkbyBTcHJpbmdzLENPIn0sImxvY2F0aW9ucyI6W3sic3RyZWV0IjoiIiwiYWRtaW5BcmVhNiI6IiIsImFkbWluQXJlYTZUeXBlIjoiTmVpZ2hib3Job29kIiwiYWRtaW5BcmVhNSI6IkNvbG9yYWRvIFNwcmluZ3MiLCJhZG1pbkFyZWE1VHlwZSI6IkNpdHkiLCJhZG1pbkFyZWE0IjoiRWwgUGFzbyIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOC44MzM1MiwibG5nIjotMTA0LjgyMTgxfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM4LjgzMzUyLCJsbmciOi0xMDQuODIxODF9LCJtYXBVcmwiOiIifV19XX0=
+  recorded_at: Tue, 06 Aug 2024 02:58:23 GMT
+- request:
+    method: get
+    uri: https://api.weatherapi.com/v1/forecast.json?days=5&key=weather_key&q=38.83352,-104.82181
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.10.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 06 Aug 2024 02:58:23 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Server:
+      - BunnyCDN-IL1-1207
+      Cdn-Pullzone:
+      - '93447'
+      Cdn-Uid:
+      - 8fa3a04a-75d9-4707-8056-b7b33c8ac7fe
+      Cdn-Requestcountrycode:
+      - US
+      Age:
+      - '0'
+      Cache-Control:
+      - public, max-age=180
+      Via:
+      - 1.1 varnish (Varnish/6.0)
+      X-Weatherapi-Qpm-Left:
+      - '4999969'
+      X-Varnish:
+      - '102902541'
+      Cdn-Proxyver:
+      - '1.04'
+      Cdn-Requestpullsuccess:
+      - 'True'
+      Cdn-Requestpullcode:
+      - '200'
+      Cdn-Cachedat:
+      - '08/06/2024 02:57:12'
+      Cdn-Edgestorageid:
+      - '1070'
+      Cdn-Status:
+      - '200'
+      Cdn-Requestid:
+      - 2b2e2702ad787b0325289b692e38ff24
+      Cdn-Cache:
+      - HIT
+    body:
+      encoding: ASCII-8BIT
+      string: '{"location":{"name":"Colorado Springs","region":"Colorado","country":"United
+        States of America","lat":38.83,"lon":-104.82,"tz_id":"America/Denver","localtime_epoch":1722912941,"localtime":"2024-08-05
+        20:55"},"current":{"last_updated":"2024-08-05 20:45","temp_f":69.4,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"},"humidity":63,"feelslike_f":69.4,"vis_miles":6.0,"uv":4.0},"forecast":{"forecastday":[{"date":"2024-08-05","day":{"maxtemp_f":87.2,"mintemp_f":60.4,"avgtemp_f":73.3,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:04
+        AM","sunset":"08:05 PM"},"hour":[{"time":"2024-08-05 00:00","temp_f":70.0,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        01:00","temp_f":66.6,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        02:00","temp_f":64.9,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        03:00","temp_f":63.1,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        04:00","temp_f":61.9,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        05:00","temp_f":61.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        06:00","temp_f":63.7,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        07:00","temp_f":70.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        08:00","temp_f":75.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        09:00","temp_f":79.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        10:00","temp_f":82.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        11:00","temp_f":84.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        12:00","temp_f":85.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        13:00","temp_f":86.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        14:00","temp_f":84.3,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        15:00","temp_f":82.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        16:00","temp_f":83.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-05
+        17:00","temp_f":79.3,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-05
+        18:00","temp_f":73.7,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-05
+        19:00","temp_f":70.6,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-05
+        20:00","temp_f":69.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-05
+        21:00","temp_f":67.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-05
+        22:00","temp_f":67.7,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-05
+        23:00","temp_f":65.9,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}}]},{"date":"2024-08-06","day":{"maxtemp_f":86.5,"mintemp_f":60.9,"avgtemp_f":72.2,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:05
+        AM","sunset":"08:04 PM"},"hour":[{"time":"2024-08-06 00:00","temp_f":65.2,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-06
+        01:00","temp_f":65.3,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}},{"time":"2024-08-06
+        02:00","temp_f":64.0,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        03:00","temp_f":63.6,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        04:00","temp_f":62.6,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        05:00","temp_f":61.8,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        06:00","temp_f":64.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-06
+        07:00","temp_f":67.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        08:00","temp_f":71.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        09:00","temp_f":75.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        10:00","temp_f":78.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        11:00","temp_f":81.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        12:00","temp_f":84.0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        13:00","temp_f":85.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-06
+        14:00","temp_f":85.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        15:00","temp_f":85.0,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        16:00","temp_f":81.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        17:00","temp_f":76.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        18:00","temp_f":73.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        19:00","temp_f":71.2,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        20:00","temp_f":69.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-06
+        21:00","temp_f":68.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-06
+        22:00","temp_f":65.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-06
+        23:00","temp_f":64.3,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}}]},{"date":"2024-08-07","day":{"maxtemp_f":91.2,"mintemp_f":58.7,"avgtemp_f":73.3,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},"astro":{"sunrise":"06:06
+        AM","sunset":"08:03 PM"},"hour":[{"time":"2024-08-07 00:00","temp_f":63.1,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        01:00","temp_f":61.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        02:00","temp_f":60.2,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        03:00","temp_f":59.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        04:00","temp_f":59.1,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        05:00","temp_f":59.0,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        06:00","temp_f":60.3,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-07
+        07:00","temp_f":67.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        08:00","temp_f":74.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        09:00","temp_f":79.9,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        10:00","temp_f":84.1,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        11:00","temp_f":87.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        12:00","temp_f":89.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        13:00","temp_f":89.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        14:00","temp_f":88.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        15:00","temp_f":85.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        16:00","temp_f":79.9,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/day/263.png"}},{"time":"2024-08-07
+        17:00","temp_f":77.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-07
+        18:00","temp_f":77.4,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-07
+        19:00","temp_f":75.2,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png"}},{"time":"2024-08-07
+        20:00","temp_f":72.7,"condition":{"text":"Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/day/119.png"}},{"time":"2024-08-07
+        21:00","temp_f":70.9,"condition":{"text":"Patchy light drizzle","icon":"//cdn.weatherapi.com/weather/64x64/night/263.png"}},{"time":"2024-08-07
+        22:00","temp_f":69.6,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-07
+        23:00","temp_f":68.7,"condition":{"text":"Partly Cloudy ","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png"}}]},{"date":"2024-08-08","day":{"maxtemp_f":83.0,"mintemp_f":59.4,"avgtemp_f":69.1,"condition":{"text":"Moderate
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/302.png"}},"astro":{"sunrise":"06:07
+        AM","sunset":"08:02 PM"},"hour":[{"time":"2024-08-08 00:00","temp_f":66.9,"condition":{"text":"Clear
+        ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        01:00","temp_f":65.4,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        02:00","temp_f":63.9,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        03:00","temp_f":62.9,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        04:00","temp_f":62.0,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        05:00","temp_f":61.5,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        06:00","temp_f":62.3,"condition":{"text":"Clear ","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png"}},{"time":"2024-08-08
+        07:00","temp_f":64.3,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        08:00","temp_f":66.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        09:00","temp_f":69.6,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        10:00","temp_f":72.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        11:00","temp_f":75.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        12:00","temp_f":78.5,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        13:00","temp_f":80.7,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        14:00","temp_f":81.8,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        15:00","temp_f":82.2,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png"}},{"time":"2024-08-08
+        16:00","temp_f":80.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-08
+        17:00","temp_f":76.3,"condition":{"text":"Moderate or heavy rain in area with
+        thunder","icon":"//cdn.weatherapi.com/weather/64x64/day/389.png"}},{"time":"2024-08-08
+        18:00","temp_f":70.4,"condition":{"text":"Patchy light rain in area with thunder","icon":"//cdn.weatherapi.com/weather/64x64/day/386.png"}},{"time":"2024-08-08
+        19:00","temp_f":66.8,"condition":{"text":"Moderate or heavy rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/356.png"}},{"time":"2024-08-08
+        20:00","temp_f":63.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-08
+        21:00","temp_f":61.6,"condition":{"text":"Moderate or heavy rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/356.png"}},{"time":"2024-08-08
+        22:00","temp_f":61.0,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}},{"time":"2024-08-08
+        23:00","temp_f":60.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}}]},{"date":"2024-08-09","day":{"maxtemp_f":73.5,"mintemp_f":58.2,"avgtemp_f":63.9,"condition":{"text":"Heavy
+        rain","icon":"//cdn.weatherapi.com/weather/64x64/day/308.png"}},"astro":{"sunrise":"06:08
+        AM","sunset":"08:01 PM"},"hour":[{"time":"2024-08-09 00:00","temp_f":60.0,"condition":{"text":"Patchy
+        rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        01:00","temp_f":59.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        02:00","temp_f":59.4,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        03:00","temp_f":58.8,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        04:00","temp_f":58.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        05:00","temp_f":59.3,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        06:00","temp_f":59.9,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/night/176.png"}},{"time":"2024-08-09
+        07:00","temp_f":61.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        08:00","temp_f":63.2,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        09:00","temp_f":65.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        10:00","temp_f":68.1,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        11:00","temp_f":70.0,"condition":{"text":"Thundery outbreaks in nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/200.png"}},{"time":"2024-08-09
+        12:00","temp_f":71.2,"condition":{"text":"Thundery outbreaks in nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/200.png"}},{"time":"2024-08-09
+        13:00","temp_f":72.4,"condition":{"text":"Thundery outbreaks in nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/200.png"}},{"time":"2024-08-09
+        14:00","temp_f":72.5,"condition":{"text":"Patchy light rain in area with thunder","icon":"//cdn.weatherapi.com/weather/64x64/day/386.png"}},{"time":"2024-08-09
+        15:00","temp_f":71.0,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        16:00","temp_f":67.4,"condition":{"text":"Moderate or heavy rain in area with
+        thunder","icon":"//cdn.weatherapi.com/weather/64x64/day/389.png"}},{"time":"2024-08-09
+        17:00","temp_f":64.7,"condition":{"text":"Moderate or heavy rain shower","icon":"//cdn.weatherapi.com/weather/64x64/day/356.png"}},{"time":"2024-08-09
+        18:00","temp_f":63.6,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-09
+        19:00","temp_f":62.7,"condition":{"text":"Patchy rain nearby","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png"}},{"time":"2024-08-09
+        20:00","temp_f":61.8,"condition":{"text":"Patchy light rain","icon":"//cdn.weatherapi.com/weather/64x64/day/293.png"}},{"time":"2024-08-09
+        21:00","temp_f":61.3,"condition":{"text":"Moderate or heavy rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/356.png"}},{"time":"2024-08-09
+        22:00","temp_f":61.0,"condition":{"text":"Moderate rain at times","icon":"//cdn.weatherapi.com/weather/64x64/night/299.png"}},{"time":"2024-08-09
+        23:00","temp_f":60.9,"condition":{"text":"Light rain shower","icon":"//cdn.weatherapi.com/weather/64x64/night/353.png"}}]}]}}'
+  recorded_at: Tue, 06 Aug 2024 02:58:23 GMT
+recorded_with: VCR 6.2.0

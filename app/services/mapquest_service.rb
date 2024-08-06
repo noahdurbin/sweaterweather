@@ -8,4 +8,15 @@ class MapquestService
     location_hash = JSON.parse(response.body, symbolize_names: true)
     Location.new(location_hash)
   end
+
+  def hours(origin, destination)
+    response = conn.get("/directions/v2/route?from=#{origin}&to=#{destination}")
+    directions_hash = JSON.parse(response.body, symbolize_names: true)
+
+    if directions_hash[:info][:statuscode] == 402
+      nil
+    else
+      Trip.new(directions_hash)
+    end
+  end
 end
