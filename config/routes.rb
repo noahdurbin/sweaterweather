@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
       post '/sessions', to: 'users#login'
       get '/forecast', to: 'weather#forecast'
-      get '/road_trip', to: 'road_trip#create'
+      post '/road_trip', to: 'road_trips#create'
     end
   end
 end
