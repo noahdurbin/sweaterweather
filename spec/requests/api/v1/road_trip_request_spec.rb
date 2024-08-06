@@ -107,5 +107,25 @@ RSpec.describe 'Road Trip' do
 
       expect(response).to be_successful
     end
+
+    it 'requires user to provide a location', :vcr do
+      user1 = User.create!(email: 'user1@test.com', password: 'password', password_confirmation: 'password', api_key: SecureRandom.hex)
+      road_trip_body = {
+        origin: "New York,NY",
+        destination: "",
+        api_key: user1.api_key
+      }
+      post '/api/v1/road_trip', params: road_trip_body
+
+      json_response = JSON.parse(response.body, symbolize_names: true)
+      expect(json_response).to eq(
+        {
+            "error": {
+                "message": "Must Provide Location",
+                "status": 404
+            }
+        }
+      )
+    end
   end
 end
