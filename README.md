@@ -1,24 +1,87 @@
-# README
+# SweaterWeather
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SweaterWeather is a Rails API application that provides weather forecasts and road trip planning with weather information.
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+- User registration and authentication
+- Current weather forecasts
+- Hourly and daily weather forecasts
+- Road trip planning with estimated travel time and weather at destination
 
-* System dependencies
+## Setup
 
-* Configuration
+### Prerequisites
 
-* Database creation
+- Ruby 3.x
+- Rails 7.x
+- PostgreSQL
 
-* Database initialization
+### Installation
 
-* How to run the test suite
+1. Clone the repository:
+   ```
+   git clone https://github.com/your-username/sweaterweather.git
+   cd sweaterweather
+   ```
 
-* Services (job queues, cache servers, search engines, etc.)
+2. Install dependencies:
+   ```
+   bundle install
+   ```
 
-* Deployment instructions
+3. Set up the database:
+   ```
+   rails db:create db:migrate
+   ```
 
-* ...
+4. Set up environment variables:
+   Create a `config/credentials.yml.enc` file with your API keys:
+   ```
+   EDITOR="vim" rails credentials:edit
+   ```
+   Add your API keys:
+   ```yaml
+   maps:
+     access_key: your_mapquest_api_key
+   weather:
+     access_key: your_weatherapi_key
+   ```
+
+5. Start the server:
+   ```
+   rails server
+   ```
+
+## API Endpoints
+
+### User Registration
+- `POST /api/v1/users`
+
+### User Login
+- `POST /api/v1/sessions`
+
+### Weather Forecast
+- `GET /api/v1/forecast?location=denver,co`
+
+### Road Trip
+- `POST /api/v1/road_trip`
+
+## Running Tests
+
+```
+bundle exec rspec
+```
+
+## Services Used
+
+- MapQuest API for geocoding and directions
+- WeatherAPI for weather forecasts
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
